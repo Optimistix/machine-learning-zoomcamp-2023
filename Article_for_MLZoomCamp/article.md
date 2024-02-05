@@ -553,5 +553,17 @@ Thus, we see that the results obtained using RandomizedSearchCV are in general c
 
 So far, we have only talked of tuning classical machine learning models - what about deep learning models? It turns out that GridSearchCV and RandomizedSearchCV can be used to tune deep learning models as well, but the Keras library provides a bespoke method, called Keras-Tuner, that is specifically designed to make tuning deep learning models easier - and it can even tune classical ML models. However, that's a story for another day - hope you found this brief article useful, and are now motivated to try out GridSearchCV, RandomizedSearchCV, and other hyperparameter tuning methods provided by Scikit-Learn. Have fun (Machine) learning!
 
+## References
+* [Official Scikit-Learn documentation on GridSearchCV and RandomizedSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html) 
+
+* Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems 3rd Edition
+  Aurélien Géron
+
+* Machine Learning with PyTorch and Scikit-Learn: Develop machine learning and deep learning models with Python
+  Sebastian Raschka, Yuxi (Hayden) Liu and Vahid Mirjalili
+
+* Introduction to Machine Learning with Python: A Guide for Data Scientists
+   Andreas Müller and  Sarah Guido
+
 
 
