@@ -410,7 +410,7 @@ roc_auc_score(y_test, y_pred)
 
 
 
-### We see that the xgbclassifier trained on the full dataset achieves an accuracy of 0.8334 on the test dataset, which is very close to (& slightly higher than) the 0.8327 achieved in the official Week 6 notebook by xgboost, which is a more highly optimized version of the same algorithm.
+We see that the xgbclassifier trained on the full dataset achieves an accuracy of 0.8334 on the test dataset, which is very close to (& slightly higher than) the 0.8327 achieved in the official Week 6 notebook by xgboost, which is a more highly optimized version of the same algorithm.
 
 ## Summary 
 In summary, GridsearchCV allows us to systematically traverse the grid representing all hyperparameter choices that we specify, guaranteeing that we get the combination yielding the best performance according to robust cross-validation based estimates of the performance metric we choose. However, combinatorial growth means that GridSearchCV is computationally expensive - we next consider RandomizedSearchCV, which trades performance for speed, and often yields performance that is acceptably close to that provided by GridSearchCV.
@@ -419,7 +419,7 @@ In summary, GridsearchCV allows us to systematically traverse the grid represent
 
 # <ins> Faster, not better - but probably good enough : Hyperparameter Tuning with RandomizedSearchCV </ins> </br> </br>
 
-## RandomizedSearchCV is similar to GridsearchCV, but it only searches a random subspace of the hyperparameter space, which makes it faster than GridSearchCV at the cost of a drop in performance that is often acceptable in practice. We can define the parameter grid exactly like we did for GridSearchCV. 
+RandomizedSearchCV is similar to GridsearchCV, but it only searches a random subspace of the hyperparameter space, which makes it faster than GridSearchCV at the cost of a drop in performance that is often acceptable in practice. We can define the parameter grid exactly like we did for GridSearchCV. 
 
 
 ```python
