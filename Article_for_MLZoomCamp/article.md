@@ -26,6 +26,8 @@ In the following sections, we'll discuss GridSearchCV and RandomizedSearchCV, wh
 
 Xgboost was the best model, and after retraining using the full training set, achieved 0.8323 accuracy on the test set. We'll use these results for reference as we look at the results obtained after tuning hyperparameters using GridSearchCV and RandomizedSearchCV.
 
+You can find the notebook with all the code to reproduce the results shown here on [Github](https://github.com/Optimistix/machine-learning-zoomcamp-2023/blob/main/Article_for_MLZoomCamp/notebook_for_article.ipynb)
+
 # Hyperparameter Tuning with GridSearchCV
 
 [GridSearchCV](https://scikit-learn.org/stable/modules/grid_search.html#grid-search) is a Scikit-Learn function to exhaustively evaluate all combinations of specific hyperparameter values (specified via input) - "Grid" refers to the points comprising the finite subspace of the hyperparameter space represented by the input values, and "CV" refers to the fact that GridSearchCV evaluates hyperparameter combinations in a cross-validation setting, making performance estimates more robust. We can specify discrete values or ranges for each individual hyperparameter using dictionaries, and we can evaluate multiple models, as shown in the code snippets below:
