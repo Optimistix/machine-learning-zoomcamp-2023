@@ -529,10 +529,6 @@ roc_auc_score(y_test, y_pred)
 
 ### And finally, once more after training on the full training dataset:
 
-```python
-
-```
-
 
 ```python
 xgbc_best_rand.fit(X_full_train, y_full_train)
