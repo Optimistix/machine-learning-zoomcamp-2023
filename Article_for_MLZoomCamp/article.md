@@ -1,4 +1,4 @@
-# Systematic hyperparameter tuning using GridSearchCV and RandomizedSearch CV
+# Systematic hyperparameter tuning using GridSearchCV and RandomizedSearchCV
 
 In the wonderful MLZoomCamp course, we had many occasions where we needed to tune the hyperparameters of a machine learning model to understand and improve its performance on a given dataset. The way we usually went about it was something like the following:
 
