@@ -138,60 +138,6 @@ gridsearch_results
 
 
 
-
-```python
-gridsearch_results
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>model</th>
-      <th>best_score</th>
-      <th>best_params</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>random_forest</td>
-      <td>0.844150</td>
-      <td>{'max_depth': 10, 'min_samples_leaf': 3, 'n_es...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>xgboost</td>
-      <td>0.853449</td>
-      <td>{'eta': 0.1, 'max_depth': 3, 'min_child_weight...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>decision_tree</td>
-      <td>0.794940</td>
-      <td>{'max_depth': 7, 'min_samples_leaf': 100}</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
 ### Now, let's check the best parameter combination for Random Forest, and define the Random Forest with best parameters & evaluate on validation data:
 
 
@@ -545,7 +491,7 @@ roc_auc_score(y_test, y_pred)
     0.8346916084257856
 
 
-Thus, we see that the results obtained using RandomizedSearchCV are in general competitive with those obtained using GridSearchCV, even though the latter is guaranteed to find the best combination of the specified input hyperparameter values. Moreover, since RandomizedSearchCV is much faster, we can provide it a wider range of input hyperparameter values, increasing the chancing of finding combinations that result in even better performance. 
+Thus, we see that the results obtained using RandomizedSearchCV are in general competitive with those obtained using GridSearchCV, even though the latter is guaranteed to find the best combination of the specified input hyperparameter values. Moreover, since RandomizedSearchCV is much faster, we can provide it a wider range of input hyperparameter values, increasing the chances of finding combinations that result in even better performance. 
 
 So far, we have only talked of tuning classical machine learning models - what about deep learning models? It turns out that GridSearchCV and RandomizedSearchCV can be used to tune deep learning models as well, but the Keras library provides a bespoke method, called Keras-Tuner, that is specifically designed to make tuning deep learning models easier - and it can even tune classical ML models. However, that's a story for another day - hope you found this brief article useful, and are now motivated to try out GridSearchCV, RandomizedSearchCV, and other hyperparameter tuning methods provided by Scikit-Learn. Have fun (Machine) learning!
 
